@@ -1,0 +1,6 @@
+def reverse_string(s):
+    return ''.join(reversed(s))
+# Example usage
+original_string = "Hello, World!"
+reversed_string = reverse_string(original_string)
+print(reversed_string)  # Output: !dlroW ,olleH
