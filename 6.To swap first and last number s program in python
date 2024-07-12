@@ -1,0 +1,6 @@
+numbers = input("Enter numbers separated by spaces: ").split()
+numbers = [int(num) for num in numbers]
+# Swap the first and last elements
+swapped_numbers = swap_first_last(numbers)
+# Print the result
+print("List after swapping first and last elements:", swapped_numbers)
