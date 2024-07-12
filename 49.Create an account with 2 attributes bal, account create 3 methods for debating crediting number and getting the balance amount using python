@@ -1,0 +1,31 @@
+class Account:
+    def __init__(self, account_number, initial_balance=0):
+        self.account_number = account_number
+        self.bal = initial_balance
+    
+    def credit(self, amount):
+        self.bal += amount
+        print(f"Amount {amount} credited successfully. New balance is {self.bal}")
+    
+    def debit(self, amount):
+        if self.bal >= amount:
+            self.bal -= amount
+            print(f"Amount {amount} debited successfully. New balance is {self.bal}")
+        else:
+            print("Insufficient funds!")
+    
+    def get_balance(self):
+        return f"Account Balance: {self.bal}"
+
+# Example usage:
+acc = Account("AC001", 1000)  # Create an account with initial balance of 1000
+
+print(acc.get_balance())     # Output: Account Balance: 1000
+
+acc.credit(500)              # Output: Amount 500 credited successfully. New balance is 1500
+
+acc.debit(2000)              # Output: Insufficient funds!
+
+acc.debit(700)               # Output: Amount 700 debited successfully. New balance is 800
+
+print(acc.get_balance())     # Output: Account Balance: 800
