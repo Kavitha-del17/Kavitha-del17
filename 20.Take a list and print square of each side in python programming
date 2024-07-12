@@ -1,0 +1,6 @@
+def print_squares(numbers):
+    for number in numbers:
+        print(number ** 2)
+# Example usage
+numbers = [1, 2, 3, 4, 5]
+print_squares(numbers)
