@@ -1,0 +1,18 @@
+def find_even_odd_characters(s):
+    even_chars = ""
+    odd_chars = ""
+    
+    for index, char in enumerate(s):
+        if index % 2 == 0:
+            even_chars += char
+        else:
+            odd_chars += char
+    
+    return even_chars, odd_chars
+
+# Example usage
+input_string = "Hello, World!"
+even_chars, odd_chars = find_even_odd_characters(input_string)
+
+print("Characters at even indices:", even_chars)  # Output: "HloWrd"
+print("Characters at odd indices:", odd_chars)    # Output: "el, ol!"
