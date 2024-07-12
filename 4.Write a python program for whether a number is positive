@@ -1,0 +1,5 @@
+number = float(input("Enter a number: "))
+if is_positive(number):
+    print(f"{number} is positive.")
+else:
+    print(f"{number} is not positive.")
