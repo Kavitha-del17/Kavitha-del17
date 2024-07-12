@@ -1,0 +1,16 @@
+def reverse_words_in_string(s):
+    # Split the string into a list of words
+    words = s.split()
+    
+    # Reverse the order of the words
+    reversed_words = words[::-1]
+    
+    # Join the reversed list of words back into a string
+    reversed_string = ' '.join(reversed_words)
+    
+    return reversed_string
+
+# Example usage
+input_string = "Hello world this is Python"
+reversed_string = reverse_words_in_string(input_string)
+print(reversed_string)  # Output: "Python is this world Hello"
