@@ -1,0 +1,6 @@
+def count_characters_without_spaces(s):
+    return len(s.replace(" ", ""))
+# Example usage
+original_string = "Hello, World!"
+character_count = count_characters_without_spaces(original_string)
+print(character_count)  # Output: 12
