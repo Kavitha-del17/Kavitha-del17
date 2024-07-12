@@ -1,0 +1,18 @@
+def second_smallest_largest(numbers):
+    if len(numbers) < 2:
+        return None, None
+    
+    # Find the second smallest element
+    sorted_numbers = sorted(numbers)
+    second_smallest = sorted_numbers[1]
+    
+    # Find the second largest element
+    second_largest = sorted_numbers[-2]
+    
+    return second_smallest, second_largest
+
+# Example usage:
+my_list = [12, 45, 2, 41, 31, 10, 8, 6]
+second_min, second_max = second_smallest_largest(my_list)
+print("Second smallest element:", second_min)
+print("Second largest element:", second_max)
