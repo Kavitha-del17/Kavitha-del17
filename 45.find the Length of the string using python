@@ -1,0 +1,7 @@
+my_string = "Hello, world!"
+
+# Calculate the length of the string
+length_of_string = len(my_string)
+
+# Print the length
+print("Length of the string:", length_of_string)
