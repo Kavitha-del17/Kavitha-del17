@@ -1,0 +1,17 @@
+def is_palindrome(num):
+    # Convert number to string and check if it reads the same forwards and backwards
+    return str(num) == str(num)[::-1]
+
+def largest_palindrome():
+    largest = 0
+    # Check all products of two 3-digit numbers
+    for i in range(999, 99, -1):
+        for j in range(i, 99, -1):
+            product = i * j
+            if is_palindrome(product) and product > largest:
+                largest = product
+    return largest
+
+# Call the function to find the largest palindrome number
+largest_palindrome_num = largest_palindrome()
+print("The largest palindrome number made from the product of two 3-digit numbers is:", largest_palindrome_num)
