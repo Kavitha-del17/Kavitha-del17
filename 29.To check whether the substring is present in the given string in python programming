@@ -1,0 +1,12 @@
+def check_substring(string, substring):
+    if substring in string:
+        return True
+    else:
+        return False
+
+# Example usage:
+string = "Hello, world!"
+substring1 = "world"
+substring2 = "Python"
+print(f"Is '{substring1}' present in '{string}'? {check_substring(string, substring1)}")
+print(f"Is '{substring2}' present in '{string}'? {check_substring(string, substring2)}")
