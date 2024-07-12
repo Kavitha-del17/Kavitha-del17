@@ -1,0 +1,6 @@
+import math
+def factorial_math(n):
+    return math.factorial(n)
+# Example usage
+number = 5
+print(factorial_math(number))  # Output: 120
