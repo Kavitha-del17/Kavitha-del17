@@ -1,0 +1,17 @@
+def average_of_multiples(N, P):
+    sum_multiples = 0
+    for i in range(1, P + 1):
+        multiple = N * i
+        sum_multiples += multiple
+    
+    if P > 0:
+        average = sum_multiples / P
+        return average
+    else:
+        return 0  # Handle the case where P is 0, although typically P should be a positive integer
+
+# Example usage:
+N = 5  # Integer whose multiples we want to average
+P = 4  # Number of multiples
+average = average_of_multiples(N, P)
+print(f"Average of the first {P} multiples of {N}: {average}")
