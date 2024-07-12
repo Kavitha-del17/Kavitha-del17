@@ -1,0 +1,9 @@
+import itertools
+def generate_permutations(sequence):
+    return list(itertools.permutations(sequence))
+# Example usage
+sequence = [1, 2, 3]
+permutations = generate_permutations(sequence)
+for perm in permutations:
+    print(perm)
+    
