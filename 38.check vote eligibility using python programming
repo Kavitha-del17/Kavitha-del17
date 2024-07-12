@@ -1,0 +1,10 @@
+def check_vote_eligibility(age):
+    if age >= 18:
+        print("You are eligible to vote!")
+    else:
+        print("You are not eligible to vote yet.")
+
+# Example usage:
+age = 20  # Change this value to test different ages
+check_vote_eligibility(age)
+      
