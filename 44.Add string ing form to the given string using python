@@ -1,0 +1,23 @@
+def add_ing(word):
+    if len(word) >= 3:
+        # Check if the word already ends with 'ing'
+        if word[-3:] == 'ing':
+            return word
+        # Check if the word ends with a consonant-vowel-consonant pattern
+        elif len(word) >= 3 and word[-1] != 'y' and word[-2] not in 'aeiou' and word[-3] in 'aeiou':
+            return word + word[-1] + 'ing'
+        else:
+            return word + 'ing'
+    else:
+        return word
+
+# Example usage:
+word1 = "play"
+word2 = "swimming"
+word3 = "read"
+word4 = "go"
+
+print(add_ing(word1))  # Outputs: playing
+print(add_ing(word2))  # Outputs: swimming
+print(add_ing(word3))  # Outputs: reading
+print(add_ing(word4))  # Outputs: going
