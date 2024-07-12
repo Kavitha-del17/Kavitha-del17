@@ -1,0 +1,9 @@
+def print_greatest(a, b):
+    if a > b:
+        print(f"{a} is the greatest.")
+    else:
+        print(f"{b} is the greatest.")
+
+# Example usage:
+print_greatest(10, 5)  # Output: 10 is the greatest.
+print_greatest(3, 8)   # Output: 8 is the greatest.
