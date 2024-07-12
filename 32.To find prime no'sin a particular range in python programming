@@ -1,0 +1,27 @@
+def is_prime(num):
+    if num <= 1:
+        return False
+    if num == 2:
+        return True 
+    if num % 2 == 0:
+        return False 
+    sqrt_num = int(num**0.5) + 1
+    for i in range(3, sqrt_num, 2):
+        if num % i == 0:
+            return False
+    
+    return True
+
+def count_primes_in_range(start, end):
+    count = 0
+    for num in range(start, end + 1):
+        if is_prime(num):
+            count += 1
+    return count
+
+# Example usage:
+start_range = 10
+end_range = 50
+prime_count = count_primes_in_range(start_range, end_range)
+print(f"Number of prime numbers between {start_range} and {end_range}: {prime_count}")
+
