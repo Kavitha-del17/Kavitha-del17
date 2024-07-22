@@ -7,7 +7,5 @@ def print_half_diamond(rows):
         for j in range(i):
             print('*', end='')
         print()
-
-# Example usage:
 rows = 5
 print_half_diamond(rows)
